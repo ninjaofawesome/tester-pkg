@@ -1,0 +1,4 @@
+.d {
+	@include BoldLink();
+	@include link-transition(500ms);
+}

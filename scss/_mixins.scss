@@ -6,6 +6,25 @@
 	color: $color;
 }
 
+@mixin BoldLink($color: $green, $hover: $lime) {
+	font-family: $arial-bold;
+	font-size: 24px;
+	line-height: 32px;
+	letter-spacing: 0.3rem;
+	color: $color;
+
+	&:active,
+	&:focus,
+	&:hover {
+		color: $hover;
+		text-decoration: none;
+	}
+
+	&:visted {
+		color: $color;
+	}
+}
+
 @mixin link-transition($time: 350ms){
   -webkit-transition: all $time ease-out;
   -moz-transition: all $time ease-out;
