@@ -1,0 +1,14 @@
+@mixin BoldType($color: $green) {
+	font-family: $arial-bold;
+	font-size: 24px;
+	line-height: 32px;
+	letter-spacing: 0.3rem;
+	color: $color;
+}
+
+@mixin link-transition($time: 350ms){
+  -webkit-transition: all $time ease-out;
+  -moz-transition: all $time ease-out;
+  -o-transition: all $time ease-out;
+  transition: all $time ease-out;
+}
